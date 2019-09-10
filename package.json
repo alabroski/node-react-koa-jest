@@ -1,0 +1,21 @@
+{
+  "name": "node-react-koa-jest",
+  "version": "1.0.0",
+  "description": "A sample node app using a Koa/MongoDB backend, React for the frontend and jest for testing.",
+  "main": "index.js",
+  "author": "Aleksandar Labroski",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.14.3"
+  },
+  "dependencies": {
+    "prettier": "^1.18.2"
+  }
+}

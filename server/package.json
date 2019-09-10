@@ -1,0 +1,12 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "A simple web app server using node and koa as well as jest for testing purposes.",
+  "main": "src/index.js",
+  "author": "Aleksandar Labroski",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.8.1",
+    "koa-router": "^7.4.0"
+  }
+}
