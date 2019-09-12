@@ -6,6 +6,7 @@
   "author": "Aleksandar Labroski",
   "license": "MIT",
   "dependencies": {
+    "@koa/cors": "^3.0.0",
     "koa": "^2.8.1",
     "koa-router": "^7.4.0"
   }

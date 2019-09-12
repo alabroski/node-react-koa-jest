@@ -1,6 +1,7 @@
 class MainController {
-  mainRoute() {
-    ctx.body = 'Hello World !!!'
+  async mainRoute(ctx) {
+    ctx.body = 'Hello World!'
+    console.log("Handling main route");
   }
 }
 
