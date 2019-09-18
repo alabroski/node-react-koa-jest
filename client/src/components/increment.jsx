@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import Button from '@material-ui/core/Button'
 
 const Increment = () => {
   const [counter, setCount] = useState(0);
@@ -6,9 +7,9 @@ const Increment = () => {
   return (
     <div>
       <p>You clicked {counter} times</p>
-      <button onClick={() => setCount(counter + 1)}>
+      <Button onClick={() => setCount(counter + 1)}>
         Click me
-      </button>
+      </Button>
     </div>
   );
 }

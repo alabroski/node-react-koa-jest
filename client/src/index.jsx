@@ -24,9 +24,9 @@ export default class App extends React.Component {
   }
 
   render() {
-    return <div>
-      <div>The server says: {this.state.currentText}</div>
-      <Increment />
+    return <div className="main">
+        <div>The server says: {this.state.currentText}</div>
+        <Increment />
       </div>
   }
 }
