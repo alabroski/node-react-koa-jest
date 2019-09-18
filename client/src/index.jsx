@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import axios from 'axios'
+import Increment from './components/increment'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -14,7 +15,6 @@ export default class App extends React.Component {
   componentDidMount() {
     axios.get('http://localhost:1234/hello').then(
       result => {
-        console.log(result)
         this.setState({ currentText: result.data, error: false })
       },
       error => {
@@ -24,8 +24,10 @@ export default class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.currentText)
-    return <div>The server says: {this.state.currentText}</div>
+    return <div>
+      <div>The server says: {this.state.currentText}</div>
+      <Increment />
+      </div>
   }
 }
 

@@ -1,8 +1,7 @@
 module.exports = {
+  extends: ['plugin:react/recommended'],
   env: {
-    browser: true,
-    amd: true,
-    node: true
+    browser: true
   },
   parserOptions: {
     ecmaFeatures: {

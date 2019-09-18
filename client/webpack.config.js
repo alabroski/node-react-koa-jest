@@ -1,6 +1,11 @@
+/* eslint-disable */
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 module.exports = {
+  mode: 'development',
   entry: './src/index.jsx',
+  resolve: {
+    extensions: ['.js', '.jsx', '.json']
+  },
   module: {
     rules: [
       {
