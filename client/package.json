@@ -2,7 +2,6 @@
   "name": "client",
   "version": "1.0.0",
   "description": "A sample React web client for a Node app.",
-  "main": "index.js",
   "author": "Aleksandar Labroski",
   "license": "MIT",
   "scripts": {
