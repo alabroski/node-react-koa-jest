@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+
 import Increment from './Increment'
 
 export default class App extends React.Component {
@@ -11,21 +12,16 @@ export default class App extends React.Component {
     }
   }
 
-  componentDidMount() {
-    axios.get('http://localhost:1234/hello').then(
-      result => {
-        this.setState({ currentText: result.data, error: false })
-      },
-      error => {
-        this.setState({ currentText: '', error: error })
-      }
-    )
+  async componentDidMount() {
+    const result = await axios.get('http://localhost:1234/hello')
+    this.setState({ currentText: result.data, error: false })
   }
 
   render() {
-    return <div className="main">
-        <div>The server says: {this.state.currentText}</div>
-        <Increment />
-      </div>
+    return (
+    <div className="main">
+      <div>The server says: {this.state.currentText}</div>
+      <Increment />
+    </div>)
   }
 }

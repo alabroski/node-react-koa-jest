@@ -11,11 +11,6 @@
     "server"
   ],
   "devDependencies": {
-    "eslint": "^6.3.0",
-    "eslint-config-prettier": "^6.3.0",
-    "eslint-plugin-prettier": "^3.1.0"
-  },
-  "dependencies": {
-    "prettier": "^1.18.2"
+    "eslint": "^6.3.0"
   }
 }
