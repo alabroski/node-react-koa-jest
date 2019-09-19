@@ -1,6 +1,5 @@
 module.exports = {
-  "env": {
-    "node": true,
-    "amd": true
+  env: {
+    amd: true
   }
-}
+};

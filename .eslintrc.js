@@ -4,6 +4,10 @@ module.exports = {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly'
   },
+  env: {
+    node: true,
+    jest: true
+  },
   parserOptions: {
     ecmaVersion: 2017
   }
