@@ -1,7 +1,6 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import axios from 'axios'
-import Increment from './components/increment'
+import Increment from './Increment'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -30,5 +29,3 @@ export default class App extends React.Component {
       </div>
   }
 }
-
-ReactDOM.render(<App />, document.querySelector('#root'))
